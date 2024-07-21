@@ -67,10 +67,10 @@ function CreateTrip() {
       .replace('{budget}', formData?.budget)
       .replace('{totalDays}', formData?.noOfDays)
 
-    console.log(FINAL_PROMPT);
+    // console.log(FINAL_PROMPT);
 
     const result = await chatSession.sendMessage(FINAL_PROMPT);
-    console.log(result?.response?.text());
+    // console.log(result?.response?.text());
     setLoading(false);
     SaveAiTrip(result?.response?.text());
   }

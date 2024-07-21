@@ -28,7 +28,7 @@ function ViewTrip() {
             setTrip(docSnap.data());
         }
         else{
-            console.log('No such data');
+            // console.log('No such data');
             toast('No trip found');
         }
     }

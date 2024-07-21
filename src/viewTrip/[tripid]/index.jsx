@@ -24,7 +24,7 @@ function ViewTrip() {
         const docSnap=await getDoc(docRef);
 
         if(docSnap.exists()){
-            console.log("Document:",docSnap.data());
+            // console.log("Document:",docSnap.data());
             setTrip(docSnap.data());
         }
         else{

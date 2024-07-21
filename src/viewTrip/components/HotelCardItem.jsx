@@ -15,7 +15,7 @@ function HotelCardItem({hotel}) {
       textQuery:hotel?.name
     }
     const result=await GetPlaceDetails(data).then(res=>{
-      console.log(res.data.places[0].photos[3].name)
+      // console.log(res.data.places[0].photos[3].name)
 
       const photoUrl=PHOTO_REF_URL.replace('{NAME}',res.data.places[0].photos[3].name)
       setPhotoUrl(photoUrl);
